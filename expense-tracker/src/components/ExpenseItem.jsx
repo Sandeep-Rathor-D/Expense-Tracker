@@ -6,9 +6,6 @@ function ExpenseItem({ expense, onDelete, onUpdate }) {
   const [form, setForm] = useState({ ...expense });
   const [showDeleteModal, setShowDeleteModal] = useState(false);
 
-  const userId = localStorage.getItem("userId");
-  console.log(userId);
-
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
